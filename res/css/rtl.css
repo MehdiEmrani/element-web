@@ -1,0 +1,1195 @@
+@font-face {
+    font-family: "iransans";
+    font-weight: 300;
+    src: url("../fonts/iranSansWeb/IRANSansWeb(FaNum).eot")
+            format("embedded-opentype"),
+        url("../fonts/iranSansWeb/IRANSansWeb(FaNum).ttf") format("truetype"),
+        url("../fonts/iranSansWeb/IRANSansWeb(FaNum).woff") format("woff");
+}
+
+@font-face {
+    font-family: "iransans";
+    font-weight: 500;
+    src: url("../fonts/iranSansWeb/IRANSansWeb(FaNum)_Bold.eot")
+            format("embedded-opentype"),
+        url("../fonts/iranSansWeb/IRANSansWeb(FaNum)_Bold.ttf")
+            format("truetype"),
+        url("../fonts/iranSansWeb/IRANSansWeb(FaNum)_Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "iransans";
+    font-weight: 200;
+    src: url("../fonts/iranSansWeb/IRANSansWeb(FaNum)_Light.eot")
+            format("embedded-opentype"),
+        url("../fonts/iranSansWeb/IRANSansWeb(FaNum)_Light.ttf")
+            format("truetype"),
+        url("../fonts/iranSansWeb/IRANSansWeb(FaNum)_Light.woff") format("woff");
+}
+
+@font-face {
+    font-family: "iransans";
+    font-weight: 400;
+    src: url("../fonts/iranSansWeb/IRANSansWeb(FaNum)_Medium.ttf")
+            format("truetype"),
+        url("../fonts/iranSansWeb/IRANSansWeb(FaNum)_Medium.woff")
+            format("woff");
+}
+
+@font-face {
+    font-family: "iransans";
+    font-weight: 100;
+    src: url("../fonts/iranSansWeb/IRANSansWeb(FaNum)_UltraLight.eot")
+            format("embedded-opentype"),
+        url("../fonts/iranSansWeb/IRANSansWeb(FaNum)_UltraLight.ttf")
+            format("truetype"),
+        url("../fonts/iranSansWeb/IRANSansWeb(FaNum)_UltraLight.woff")
+            format("woff");
+}
+
+@font-face {
+    font-family: "iranSansDN";
+    src: url("../fonts/iranSansDN/IRANSansDN.eot");
+    src: local("IRANSansDN"),
+        url("../assets/fonts/iransans/IRANSansDN.eot?#iefix")
+            format("embedded-opentype"),
+        url("../fonts/iranSansDN/IRANSansDN.woff2") format("woff2"),
+        url("../fonts/iranSansDN/IRANSansDN.woff") format("woff"),
+        url("../fonts/iranSansDN/IRANSansDN.ttf") format("truetype"),
+        url("../fonts/iranSansDN/IRANSansDN.svg#IRANSansDN") format("svg");
+}
+
+/******************************/
+
+html,
+body {
+    direction: rtl;
+    /* font-size: 12px; */
+}
+
+* {
+    font-family: iransans;
+    box-sizing: border-box;
+    /* padding: 0; */
+    /* margin: 0; */
+    outline: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    font-family: inherit;
+}
+
+/********************/
+
+.mx_ButtonRow > *:first-child {
+    margin-right: 0;
+    margin-left: 10px !important;
+}
+
+.mx_AuthBody_fieldRow > .mx_Field:first-child {
+    margin-left: 5px;
+    margin-right: 0px;
+}
+
+.mx_AuthBody_fieldRow > .mx_Field:last-child {
+    margin-left: 0px;
+    margin-right: 5px;
+}
+
+.mx_Field label {
+    left: unset;
+}
+
+.mx_Dialog_cancelButton {
+    right: unset;
+    left: 0;
+}
+
+.mx_Dialog_buttons {
+    text-align: left;
+}
+
+.mx_Field_select::before {
+    left: 10px;
+    right: unset;
+}
+
+.mx_Login_submit {
+    font-family: inherit;
+}
+
+.mx_CompleteSecurity_skip {
+    right: unset;
+    left: 24px;
+}
+
+.mx_CompleteSecurity_headerIcon {
+    margin-left: 4px;
+    margin-right: initial;
+}
+
+.mx_Dialog_header.mx_Dialog_headerWithCancel {
+    padding-right: initial;
+    padding-left: 20px;
+}
+
+.mx_CompleteSecurity_body
+    .mx_VerificationPanel_verified_section
+    .mx_AccessibleButton,
+.mx_Dialog .mx_VerificationPanel_verified_section .mx_AccessibleButton {
+    float: left;
+}
+
+.mx_ToastContainer {
+    right: 70px;
+    left: initial;
+}
+
+.mx_ToastContainer .mx_Toast_toast .mx_Toast_buttons {
+    float: left;
+}
+
+.mx_ToastContainer
+    .mx_Toast_toast
+    .mx_Toast_buttons
+    .mx_AccessibleButton
+    + .mx_AccessibleButton {
+    margin-left: initial;
+    margin-right: 5px;
+}
+
+.mx_SpacePanel .mx_SpacePanel_toggleCollapse {
+    left: -8px;
+    right: initial;
+}
+
+.mx_SpacePanel .mx_SpacePanel_toggleCollapse::before {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.mx_SpacePanel .mx_SpacePanel_toggleCollapse.expanded::before {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+.mx_SpacePanel
+    .mx_SpaceItem.collapsed
+    > .mx_SpaceButton
+    > .mx_SpaceButton_toggleCollapse {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.mx_ContextualMenu_left {
+    right: 0;
+    left: initial;
+}
+
+.mx_UserMenu_contextMenu
+    .mx_UserMenu_contextMenu_header
+    .mx_UserMenu_contextMenu_themeButton {
+    margin-left: initial;
+    margin-right: 8px;
+}
+
+.mx_IconizedContextMenu
+    .mx_IconizedContextMenu_optionList
+    .mx_AccessibleButton
+    .mx_IconizedContextMenu_icon
+    + .mx_IconizedContextMenu_label {
+    padding-left: initial;
+    padding-right: 14px;
+}
+
+.mx_UserMenu .mx_UserMenu_name {
+    margin-right: 10px;
+    margin-left: initial;
+}
+
+.mx_IconizedContextMenu.mx_IconizedContextMenu_compact
+    .mx_IconizedContextMenu_optionList
+    > * {
+    padding: 8px 11px 8px 16px;
+}
+
+.mx_IconizedContextMenu .mx_IconizedContextMenu_checked,
+.mx_IconizedContextMenu .mx_IconizedContextMenu_unchecked {
+    margin-right: 16px;
+    margin-left: -5px;
+}
+
+.mx_SpacePanel .mx_SpaceButton .mx_SpaceButton_name {
+    margin-left: initial;
+    margin-right: 8px;
+}
+
+.mx_SpacePanel ul > .mx_SpaceItem {
+    padding-left: initial;
+    padding-right: 16px;
+}
+
+.mx_SpacePanel .mx_SpaceButton {
+    padding: 4px 0 4px 4px;
+}
+
+.mx_SpacePanel .mx_SpaceItem:not(.hasSubSpaces) > .mx_SpaceButton {
+    margin-left: initial;
+    margin-right: 16px;
+}
+
+.mx_QuickSettingsButton.expanded {
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.mx_SpacePanel > .mx_AutoHideScrollbar {
+    padding: 0 0 16px 8px;
+}
+
+.mx_SpacePanel .mx_UserMenu {
+    margin: 12px 18px 4px 14px;
+}
+
+.mx_IconizedContextMenu
+    .mx_IconizedContextMenu_optionList
+    .mx_AccessibleButton
+    .mx_BetaCard_betaPill {
+    margin-left: initial;
+    margin-right: 16px;
+}
+
+.mx_ContextualMenu_wrapper.mx_SpaceCreateMenu_wrapper {
+    right: 72px;
+    left: initial;
+}
+
+.mx_SpaceCreateMenu_wrapper .mx_ContextualMenu_background {
+    right: 68px;
+    left: initial;
+}
+
+.mx_SpaceCreateMenu_wrapper
+    .mx_ContextualMenu
+    .mx_SpaceCreateMenu_back::before {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.mx_SpaceCreateMenu_wrapper
+    .mx_ContextualMenu
+    .mx_AccessibleButton_kind_primary {
+    margin-right: auto;
+    margin-left: initial;
+}
+
+.mx_Checkbox input[type="checkbox"] + label > *:not(.mx_Checkbox_background) {
+    margin-left: initial;
+    margin-right: 10px;
+}
+
+.mx_QuickSettingsButton_ContextMenuWrapper
+    .mx_ContextualMenu
+    .mx_QuickSettingsButton_moreOptionsButton {
+    margin-left: initial;
+}
+
+.mx_QuickSettingsButton_ContextMenuWrapper
+    .mx_ContextualMenu
+    .mx_QuickSettingsButton_themePicker
+    .mx_Dropdown {
+    margin-left: initial;
+    margin-right: auto;
+}
+
+.mx_TabbedView {
+    padding: 0 16px 0 0;
+}
+
+.mx_TabbedView_tabsOnLeft .mx_TabbedView_maskedIcon {
+    margin-left: 16px;
+    margin-right: 8px;
+}
+
+.mx_TabbedView_tabsOnLeft .mx_TabbedView_tabPanel {
+    margin-right: 240px;
+    margin-left: initial;
+}
+
+.mx_UserSettingsDialog .mx_TabbedView .mx_SettingsTab,
+.mx_RoomSettingsDialog .mx_TabbedView .mx_SettingsTab,
+.mx_SpaceSettingsDialog .mx_TabbedView .mx_SettingsTab,
+.mx_SpacePreferencesDialog .mx_TabbedView .mx_SettingsTab {
+    padding-right: initial;
+    padding-left: 100px;
+}
+
+.mx_SettingsTab_subsectionText {
+    margin: 10px 0 10px 80px;
+}
+
+.mx_SidebarUserSettingsTab .mx_SidebarUserSettingsTab_checkboxMicrocopy {
+    margin-left: initial;
+    margin-right: 24px;
+}
+
+.mx_ProfileSettings_profileForm {
+    margin-left: 100px;
+    margin-right: initial;
+}
+
+.mx_ProfileSettings_controls {
+    margin-left: 54px;
+    margin-right: initial;
+}
+
+.mx_AvatarSetting_avatar .mx_AvatarSetting_uploadButton {
+    right: initial;
+    left: 0;
+}
+
+.mx_ProfileSettings_buttons > .mx_AccessibleButton_kind_link {
+    margin-right: initial;
+    margin-left: 10px;
+}
+
+.mx_SettingsTab_section > p {
+    margin-right: initial;
+    margin-left: 80px;
+}
+
+.mx_GeneralUserSettingsTab_changePassword .mx_Field {
+    margin-left: 100px;
+    margin-right: initial;
+}
+
+.mx_GeneralUserSettingsTab_accountSection .mx_EmailAddresses,
+.mx_GeneralUserSettingsTab_accountSection .mx_PhoneNumbers,
+.mx_GeneralUserSettingsTab_discovery .mx_ExistingEmailAddress,
+.mx_GeneralUserSettingsTab_discovery .mx_ExistingPhoneNumber,
+.mx_GeneralUserSettingsTab_languageInput {
+    margin-left: 100px;
+    margin-right: initial;
+}
+
+.mx_SetIdServer .mx_Field_input {
+    margin-left: 100px;
+    margin-right: initial;
+}
+
+.mx_ToggleSwitch {
+    height: 2.4rem;
+}
+
+.mx_ToggleSwitch_ball {
+    -webkit-transition: right 0.15s ease-out 0.1s;
+    transition: right 0.15s ease-out 0.1s;
+    left: initial;
+    right: 0;
+}
+
+.mx_SetIntegrationManager .mx_ToggleSwitch {
+    float: left;
+}
+
+.mx_ToggleSwitch.mx_ToggleSwitch_on > .mx_ToggleSwitch_ball {
+    right: calc(100% - 2rem);
+    left: initial;
+}
+
+.mx_Dialog {
+    max-height: 86%;
+}
+
+.mx_ThemeChoicePanel > .mx_ThemeSelectors > .mx_StyledRadioButton {
+    margin-left: 15px;
+    margin-right: initial;
+}
+
+.mx_FontScalingPanel_fontSlider {
+    direction: ltr;
+}
+
+.mx_FontScalingPanel_fontSlider,
+.mx_FontScalingPanel_fontSlider_preview {
+    margin-left: 100px;
+    margin-right: initial;
+}
+
+.mx_GroupLayout .mx_EventTile > .mx_SenderProfile {
+    margin-right: 64px;
+    margin-left: initial;
+}
+
+.mx_EventTile:not([data-layout="bubble"]) .mx_EventTile_avatar {
+    left: initial;
+    right: 8px;
+}
+
+.mx_EventTile:not([data-layout="bubble"]).mx_EventTile_info
+    .mx_EventTile_avatar {
+    left: initial;
+    right: 64px;
+}
+
+.mx_EventTile:not([data-layout="bubble"]) .mx_EventTile_line,
+.mx_EventTile:not([data-layout="bubble"]) .mx_EventTile_reply {
+    padding-right: 64px;
+    padding-left: initial;
+}
+
+.mx_EventTile_content {
+    margin-left: 34px;
+    margin-right: initial;
+}
+
+.mx_FontScalingPanel_customFontSizeField {
+    margin-right: calc(1.6rem + 10px);
+    margin-left: initial;
+}
+
+.mx_ImageSizePanel .mx_ImageSizePanel_radios > label {
+    margin-left: 68px;
+    margin-right: initial;
+}
+
+.mx_StyledRadioButton input[type="radio"] + div {
+    margin-right: 2px;
+    margin-left: initial;
+}
+
+.mx_ImageSizePanel
+    .mx_ImageSizePanel_radios
+    .mx_ImageSizePanel_size.mx_ImageSizePanel_sizeLarge,
+.mx_ImageSizePanel
+    .mx_ImageSizePanel_radios
+    .mx_ImageSizePanel_size.mx_ImageSizePanel_sizeDefault {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.mx_SettingsTab_section .mx_SettingsFlag .mx_ToggleSwitch {
+    float: left;
+}
+
+.mx_SettingsTab_section .mx_SettingsFlag .mx_SettingsFlag_label {
+    padding-right: initial;
+    padding-left: 10px;
+}
+
+.mx_UserNotifSettings .mx_UserNotifSettings_pushRulesTable tr > th:first-child {
+    text-align: right;
+}
+
+.mx_TagComposer .mx_TagComposer_input .mx_AccessibleButton {
+    margin-right: 16px;
+    margin-left: initial;
+}
+
+.mx_CreateSecretStorageDialog_optionIcon {
+    margin-left: 8px;
+    margin-right: initial;
+}
+
+.mx_Dialog button:not(.mx_Dialog_nonDialogButton),
+.mx_Dialog input[type="submit"],
+.mx_Dialog_buttons button:not(.mx_Dialog_nonDialogButton),
+.mx_Dialog_buttons input[type="submit"] {
+    margin-left: 8px;
+    margin-right: 0px;
+}
+
+.mx_Dialog button:not(.mx_Dialog_nonDialogButton):last-child {
+    margin-left: 0px;
+    margin-right: initial;
+}
+
+.mx_SettingsTab_section .mx_SettingsFlag {
+    margin-left: 80px;
+    margin-right: initial;
+}
+
+.mx_VoiceUserSettingsTab .mx_Field,
+.mx_PreferencesUserSettingsTab .mx_Field {
+    margin-left: 100px;
+    margin-right: initial;
+}
+
+.mx_Field input,
+.mx_Field select,
+.mx_Field textarea {
+    padding: 9px;
+}
+
+.mx_DevicesPanel_icon,
+.mx_DevicesPanel_checkbox {
+    margin-right: 9px;
+    margin-left: initial;
+}
+
+.mx_CryptographyPanel_importExportButtons .mx_AccessibleButton {
+    margin-left: 10px;
+    margin-right: initial;
+}
+
+.mx_E2eAdvancedPanel_settingLongDescription {
+    margin-left: 150px;
+    margin-right: initial;
+}
+
+.mx_HelpUserSettingsTab_copy .mx_HelpUserSettingsTab_copyButton {
+    margin-right: 20px;
+    margin-left: initial;
+}
+
+.mx_RoomSearch .mx_RoomSearch_icon {
+    margin-right: 7px;
+    margin-left: initial;
+}
+
+.mx_RoomSearch.mx_RoomSearch_minimized .mx_RoomSearch_icon {
+    margin-left: initial;
+    margin-right: 0;
+}
+
+.mx_LeftPanel
+    .mx_LeftPanel_roomListContainer
+    .mx_LeftPanel_filterContainer
+    .mx_RoomSearch_shortcutPrompt {
+    margin-left: 6px;
+    margin-right: initial;
+}
+
+.mx_LeftPanel
+    .mx_LeftPanel_roomListContainer
+    .mx_LeftPanel_filterContainer
+    .mx_LeftPanel_exploreButton,
+.mx_LeftPanel
+    .mx_LeftPanel_roomListContainer
+    .mx_LeftPanel_filterContainer
+    .mx_LeftPanel_recentsButton {
+    margin-right: 8px;
+    margin-left: initial;
+}
+
+.mx_LeftPanel.mx_LeftPanel_minimized
+    .mx_LeftPanel_roomListContainer
+    .mx_LeftPanel_filterContainer
+    .mx_LeftPanel_exploreButton,
+.mx_LeftPanel.mx_LeftPanel_minimized
+    .mx_LeftPanel_roomListContainer
+    .mx_LeftPanel_filterContainer
+    .mx_LeftPanel_recentsButton {
+    margin-right: 0;
+
+    margin-left: initial;
+}
+
+.mx_RoomSearch.mx_RoomSearch_focused .mx_RoomSearch_clearButton,
+.mx_RoomSearch.mx_RoomSearch_hasQuery .mx_RoomSearch_clearButton {
+    margin-left: 8px;
+    margin-right: initial;
+}
+
+.mx_LeftPanel
+    .mx_LeftPanel_roomListContainer
+    .mx_LeftPanel_roomListFilterCount {
+    margin-right: 12px;
+    margin-left: initial;
+}
+
+.mx_RoomSublist
+    .mx_RoomSublist_headerContainer
+    .mx_RoomSublist_headerText
+    .mx_RoomSublist_collapseBtn {
+    margin-left: 6px;
+    margin-right: initial;
+}
+
+.mx_RoomSublist
+    .mx_RoomSublist_headerContainer
+    .mx_RoomSublist_auxButton::before,
+.mx_RoomSublist
+    .mx_RoomSublist_headerContainer
+    .mx_RoomSublist_menuButton::before {
+    right: 4px;
+    left: initial;
+}
+
+.mx_RoomSublist .mx_RoomSublist_headerContainer .mx_RoomSublist_auxButton,
+.mx_RoomSublist .mx_RoomSublist_headerContainer .mx_RoomSublist_menuButton {
+    margin-right: 8px;
+    margin-left: initial;
+}
+
+.mx_RoomListHeader .mx_RoomListHeader_contextLessTitle,
+.mx_RoomListHeader .mx_RoomListHeader_contextMenuButton {
+    padding: 1px 4px 1px 24px;
+    margin-left: auto;
+    margin-right: 8px;
+}
+
+.mx_RoomListHeader .mx_RoomListHeader_plusButton {
+    margin-right: 8px;
+    margin-left: 12px;
+}
+
+.mx_RoomTile .mx_DecoratedRoomAvatar,
+.mx_RoomTile .mx_RoomTile_avatarContainer {
+    margin-left: 8px;
+    margin-right: initial;
+}
+
+.mx_RoomTile.mx_RoomTile_minimized .mx_DecoratedRoomAvatar,
+.mx_RoomTile.mx_RoomTile_minimized .mx_RoomTile_avatarContainer {
+    margin-left: 0;
+    margin-right: initial;
+}
+
+.mx_RoomTile .mx_RoomTile_nameContainer {
+    margin-left: 8px;
+    margin-right: initial;
+    text-align: right;
+}
+
+.mx_RoomTile .mx_RoomTile_notificationsButton {
+    margin-right: 4px;
+    margin-left: initial;
+}
+
+.mx_RoomSublist .mx_RoomSublist_showNButton .mx_RoomSublist_showNButtonChevron {
+    margin-right: 12px;
+    margin-left: 16px;
+    right: -1px;
+    left: initial;
+}
+
+.mx_SettingsFlag_label {
+    padding-left: 10px;
+    padding-right: initial;
+}
+
+.mx_SettingsFieldset {
+    margin: 10px 0 10px 80px;
+}
+
+.mx_JoinRuleSettings_radioButton + span {
+    margin-right: 34px;
+    margin-left: initial;
+}
+
+.mx_RoomSettingsDialog .mx_Dialog_title {
+    padding-left: 80px;
+    padding-right: initial;
+}
+
+.mx_NotificationSettingsTab_notificationsSection .mx_StyledRadioButton {
+    padding-right: 8px;
+    padding-left: initial;
+}
+
+.mx_NotificationSettingsTab_notificationsSection .mx_StyledRadioButton::before {
+    right: 0;
+    left: initial;
+}
+
+.mx_NotificationSettingsTab_notificationsSection
+    .mx_StyledRadioButton
+    .mx_NotificationSettingsTab_microCopy {
+    margin-left: 32px;
+    margin-right: initial;
+}
+
+.mx_AccessibleButton.mx_NotificationSound_browse {
+    margin-left: 10px;
+    margin-right: initial;
+}
+
+.mx_JoinRuleDropdown .mx_Dropdown_option > div {
+    padding-right: 30px;
+    padding-left: initial;
+}
+
+.mx_JoinRuleDropdown .mx_Dropdown_option > div::before {
+    left: initial;
+    right: 6px;
+}
+
+.mx_Dropdown_arrow {
+    margin-left: 9px;
+    padding-left: 9px;
+    padding-right: initial;
+}
+
+.mx_CreateRoomDialog p {
+    margin: 0 0 0 85px;
+}
+
+.mx_CreateRoomDialog .mx_ToggleSwitch {
+    margin-right: 30px;
+    margin-left: initial;
+}
+
+.mx_NetworkDropdown_server
+    .mx_NetworkDropdown_server_network[aria-checked="true"]::after {
+    right: initial;
+    left: 10px;
+}
+
+.mx_NetworkDropdown_server_add {
+    padding: 16px 32px 16px 10px;
+    border-radius: 0 4px 4px 0;
+}
+
+.mx_NetworkDropdown_server_add::before {
+    left: initial;
+    top: 18px;
+    right: 7px;
+}
+
+.mx_NetworkDropdown {
+    padding-right: initial;
+    padding-left: 32px;
+    margin-right: auto;
+    margin-left: 9px;
+}
+
+.mx_NetworkDropdown_handle::after {
+    left: -27.5px;
+    right: initial;
+}
+
+.mx_TextInputDialog_label {
+    text-align: right;
+}
+
+.mx_RoomDirectory_roomAvatar {
+    padding: 2px 0 0 14px;
+}
+
+.mx_RoomDirectory_roomDescription {
+    text-align: right;
+}
+
+.mx_MatrixChat > .mx_ResizeHandle.mx_ResizeHandle_horizontal {
+    margin: 0 calc(-6.5px + 8px / 2) 0 calc(-5.5px - 8px / 2);
+}
+
+.mx_RoomSublist.mx_RoomSublist_minimized
+    .mx_RoomSublist_headerContainer
+    .mx_RoomSublist_auxButton {
+    margin-right: 0 !important;
+    margin-left: initial !important;
+}
+
+.mx_RoomSublist.mx_RoomSublist_minimized
+    .mx_RoomSublist_headerContainer
+    .mx_RoomSublist_auxButton::before {
+    left: initial;
+    right: 8px;
+}
+
+/* .mx_RoomList {
+    padding-left: 7px;
+    padding-right: initial;
+} */
+
+.mx_RoomSublist {
+    margin-left: 8px;
+    margin-right: initial;
+}
+
+.mx_InviteDialog_helpText {
+    margin-top: 5px;
+}
+
+.mx_InviteDialog_other {
+    padding-right: 20px;
+    padding-left: initial;
+}
+
+.mx_InviteDialog_addressBar {
+    margin: 8px 0 0 45px;
+}
+
+.mx_InviteDialog_addressBar .mx_InviteDialog_editor {
+    padding-right: 8px;
+    padding-left: initial;
+}
+
+.mx_InviteDialog_addressBar .mx_InviteDialog_goButton {
+    margin-right: 10px;
+    margin-left: initial;
+    height: 40px;
+}
+
+.mx_RoomHeader_wrapper {
+    margin: 0 16px 0 20px;
+}
+
+.mx_RoomHeader_avatar {
+    margin: 0 7px 0 6px;
+}
+
+.mx_RoomHeader_button::before {
+    left: initial;
+    right: 4px;
+}
+
+.mx_RightPanel_headerButton::before {
+    left: initial;
+    right: 4px;
+}
+
+.mx_RoomView_body .mx_RoomView_timeline {
+    margin-left: calc(8px / 2);
+    margin-right: initial;
+}
+
+.mx_JumpToBottomButton {
+    left: 24px;
+    right: initial;
+}
+
+.mx_NewRoomIntro {
+    margin: 40px 64px 48px 0;
+}
+
+.mx_MiniAvatarUploader .mx_Tooltip {
+    right: 72px;
+    left: initial;
+}
+
+.mx_NewRoomIntro
+    .mx_NewRoomIntro_buttons
+    .mx_AccessibleButton:not(.mx_AccessibleButton_kind_primary_outline)::before {
+    margin-left: 5px;
+    margin-right: initial;
+}
+
+.mx_EventListSummary_toggle {
+    float: left;
+    margin-left: 10px;
+    margin-right: initial;
+}
+
+.mx_EventListSummary:not([data-layout="bubble"]) .mx_EventTile_line {
+    padding-right: calc(64px);
+    padding-left: initial;
+}
+
+.mx_EventListSummary_avatars {
+    margin-left: 8px;
+    margin-right: initial;
+}
+
+.mx_RoomView_timeline_rr_enabled
+    .mx_EventTile[data-layout="group"]
+    .mx_EventTile_line {
+    margin-left: 110px;
+    margin-right: initial;
+}
+
+.mx_EventTile:not([data-layout="bubble"]).mx_EventTile_info .mx_EventTile_line,
+.mx_EventListSummary:not([data-layout="bubble"])
+    > :not(.mx_EventTile)
+    .mx_EventTile_avatar
+    ~ .mx_EventTile_line {
+    padding-right: calc(64px + 18px);
+    padding-left: initial;
+}
+
+.mx_MessageActionBar {
+    left: 8px;
+    right: initial;
+}
+
+.mx_MessageActionBar::before {
+    right: -58px;
+    left: initial;
+}
+
+.mx_MessageActionBar_maskButton::after {
+    left: initial;
+    right: 0;
+}
+
+.mx_ReactionsRowButton,
+.mx_ViewSource.mx_Dialog_fixedWidth {
+    direction: ltr;
+}
+
+.mx_ViewSource .mx_Dialog_buttons,
+.mx_ViewSource .mx_Dialog_header,
+.mx_ViewSource .mx_ViewSource_heading {
+    direction: rtl;
+}
+
+.mx_CallEvent_wrapper
+    .mx_CallEvent
+    .mx_CallEvent_info
+    .mx_CallEvent_info_basic {
+    margin-right: 10px;
+    margin-left: initial;
+}
+
+.mx_CallEvent_wrapper
+    .mx_CallEvent
+    .mx_CallEvent_info
+    .mx_CallEvent_info_basic
+    .mx_CallEvent_type
+    .mx_CallEvent_type_icon {
+    margin-left: 5px;
+    margin-right: initial;
+}
+
+.mx_CallEvent_wrapper .mx_CallEvent .mx_CallEvent_content {
+    margin-left: 16px;
+    margin-right: initial;
+}
+
+.mx_CallEvent_wrapper .mx_CallEvent.mx_CallEvent_narrow .mx_CallEvent_content {
+    margin-right: 54px;
+    margin-left: initial;
+}
+
+.mx_CallEvent_wrapper .mx_CallEvent .mx_CallEvent_info {
+    margin-right: 12px;
+    margin-left: initial;
+}
+
+.mx_MediaBody.mx_VoiceMessagePrimaryContainer {
+    direction: ltr;
+}
+
+.mx_MediaBody.mx_VoiceMessagePrimaryContainer .mx_Clock {
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
+.mx_EditMessageComposer .mx_EditMessageComposer_buttons {
+    left: 0;
+    right: 0;
+    margin: 0 0 0 -110px;
+    padding-left: 147px;
+    padding-right: initial;
+}
+
+.mx_EventTile_content .mx_EventTile_edited {
+    margin-right: 9px;
+    margin-left: initial;
+}
+
+.mx_MessageEditHistoryDialog_edits .mx_EventTile_line,
+.mx_MessageEditHistoryDialog_edits .mx_EventTile_content {
+    margin-left: 0px;
+    margin-right: initial;
+}
+
+.mx_EventTile:not([data-layout="bubble"]) .mx_MessageTimestamp {
+    right: 0px;
+    left: initial;
+}
+
+.mx_EventTile:not([data-layout="bubble"]) .mx_MImageBody {
+    margin-left: 34px;
+    margin-right: initial;
+}
+
+.mx_MImageReplyBody .mx_MImageBody_thumbnail_container {
+    margin-left: 4px;
+    margin-right: initial;
+}
+
+.mx_ReplyChain {
+    border-right: 2px solid #0dbd8b;
+    border-left: initial;
+}
+
+.mx_ReplyChain.mx_ReplyChain_color1 {
+    border-right-color: #368bd6;
+    border-left-color: initial;
+}
+
+.mx_BaseAvatar_initial {
+    right: 0;
+    left: initial;
+}
+
+.mx_EventTile:not([data-layout="bubble"]) .mx_EventTile_msgOption {
+    float: left;
+    text-align: left;
+    margin-left: 10px;
+    margin-right: initial;
+}
+
+.mx_SearchBar .mx_SearchBar_button {
+    margin: 0 22px 0 0;
+}
+
+.mx_SearchBar .mx_SearchBar_input {
+    margin-right: 22px;
+    margin-left: 9px;
+}
+
+.mx_SearchBar .mx_SearchBar_cancel {
+    margin: 0 3px 0 12px;
+}
+
+.mx_ImageView_info_wrapper {
+    padding-right: 32px;
+    padding-left: initial;
+}
+
+.mx_ImageView_info {
+    padding-right: 12px;
+    padding-left: initial;
+}
+
+.mx_ImageView_toolbar {
+    padding-left: 16px;
+    padding-right: initial;
+}
+
+.mx_ForwardDialog
+    > .mx_ForwardList
+    .mx_ForwardList_results
+    .mx_ForwardList_entry
+    .mx_ForwardList_roomButton,
+.mx_ForwardDialog
+    > .mx_ForwardList
+    .mx_ForwardList_results
+    .mx_ForwardList_entry
+    .mx_ForwardList_roomButton
+    .mx_DecoratedRoomAvatar {
+    margin-left: 12px;
+    margin-right: initial;
+}
+
+.mx_ForwardDialog
+    > .mx_ForwardList
+    .mx_ForwardList_results
+    .mx_ForwardList_entry
+    .mx_ForwardList_roomButton
+    .mx_ForwardList_entry_detail {
+    margin-right: 8px;
+    margin-left: initial;
+}
+
+.mx_ForwardDialog
+    > .mx_ForwardList
+    .mx_ForwardList_results
+    .mx_ForwardList_entry
+    .mx_ForwardList_sendButton {
+    margin-right: 12px;
+    margin-left: initial;
+}
+
+.mx_ForwardDialog
+    > .mx_ForwardList
+    .mx_ForwardList_results
+    .mx_ForwardList_entry {
+    height: 44px;
+}
+
+.mx_EventTile:not([data-layout="bubble"]) .mx_EventTile_e2eIcon {
+    left: 0;
+    right: 44px;
+}
+
+.mx_SendMessageComposer {
+    margin-left: 6px;
+    margin-right: initial;
+}
+
+.mx_SendMessageComposer
+    .mx_BasicMessageComposer
+    .mx_BasicMessageComposer_input {
+    text-align: right;
+    direction: rtl;
+}
+
+.mx_MessageComposer_sendMessage::before {
+    transform: rotate(180deg);
+    right: 9px;
+    left: initial;
+}
+
+.mx_MessageComposer_e2eIcon.mx_E2EIcon {
+    right: 20px;
+    left: initial;
+    margin-left: 0;
+    margin-right: 3px;
+}
+
+.mx_MessageComposer_wrapper {
+    padding-right: 42px;
+    padding-left: 6px;
+}
+
+.mx_BaseCard .mx_BaseCard_Group .mx_BaseCard_Button {
+    padding: 10px 12px 10px 10px;
+    height: 40px;
+}
+
+.mx_RoomSummaryCard .mx_RoomSummaryCard_aboutGroup .mx_RoomSummaryCard_Button {
+    padding-right: 44px;
+    padding-left: 10px;
+}
+
+.mx_BaseCard
+    .mx_BaseCard_Group
+    .mx_BaseCard_Button
+    .mx_BaseCard_Button_sublabel {
+    margin-right: auto;
+    margin-left: initial;
+}
+
+.mx_RoomSummaryCard
+    .mx_RoomSummaryCard_aboutGroup
+    .mx_RoomSummaryCard_Button::before {
+    right: 10px;
+    left: initial;
+}
+
+.mx_MemberList_wrapper {
+    direction: ltr;
+}
+
+.mx_MemberList .mx_SearchBox,
+.mx_GroupMemberList .mx_SearchBox,
+.mx_GroupRoomList .mx_SearchBox {
+    height: 40px;
+}
+
+.mx_UserInfo.mx_BaseCard
+    .mx_UserInfo_container:not(.mx_UserInfo_separator)
+    > :not(h3) {
+    margin-right: 8px;
+    margin-left: initial;
+}
+
+.mx_UserInfo_container.mx_UserInfo_separator .mx_UserInfo_profile {
+    direction: ltr;
+}
+
+.mx_UserInfo.mx_BaseCard .mx_UserInfo_devices .mx_E2EIcon {
+    margin: 2px 0 0 5px;
+}
+
+.mx_EventTile:not([data-layout="bubble"]).mx_EventTile_selected
+    > .mx_EventTile_line {
+    -webkit-box-shadow: inset -50px 0 0 calc(-50px + 4px) #0dbd8b;
+    box-shadow: inset -50px 0 0 calc(-50px + 4px) #0dbd8b;
+}
+
+.mx_EventTile:not([data-layout="bubble"]).mx_EventTile_selected
+    .mx_EventTile_line,
+.mx_EventTile:not([data-layout="bubble"]):hover .mx_EventTile_line {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}

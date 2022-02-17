@@ -116,7 +116,14 @@ export async function loadLanguage() {
     }
     try {
         await languageHandler.setLanguage(langs);
-        document.documentElement.setAttribute("lang", languageHandler.getCurrentLanguage());
+        const lang = languageHandler.getCurrentLanguage();
+        document.documentElement.setAttribute("lang", lang);
+        if(lang == 'fa' || lang == 'ar') { // or any RTL languages
+            let link = document.createElement('link') as HTMLLinkElement;
+            link.href = "css/rtl.css";
+            link.rel="stylesheet";
+            document.head.appendChild(link);
+        }
     } catch (e) {
         logger.error("Unable to set language", e);
     }
